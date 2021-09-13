@@ -1,0 +1,66 @@
+<h2 class="text-align">Indications for Examination
+  <button class="open-button" (click)="openForm()">Icon</button>
+</h2>
+<p class="text-align"> Indication 1</p>
+<p class="text-align"> Indication 2</p>
+<p class="text-align"> Indication 3</p>
+<p class="text-align"> Indication 4</p>
+
+<h2 class="text-align" style="padding-top: 30px">Social History
+  <button class="open-button" (click)="openSocialHistory()">Icon</button>
+</h2>
+<p class="text-align"> Social History 1</p>
+<p class="text-align"> Social History 2</p>
+<p class="text-align"> Social History 3</p>
+<p class="text-align"> Social History 4</p>
+
+
+
+
+<div class="chat-popup pop-up-align" id="myForm">
+  <form class="form-container">
+
+    <h1>Indications</h1>
+    <div class="row">
+      <div class="col-12">
+        <label for="msg"><b>Notes</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <button type="submit" class="btn save">Save</button>
+      <button type="button" class="btn cancel" (click)="closeForm()">Cancel</button>
+    </div>
+
+  </form>
+</div>
+
+<div class="chat-popup pop-up-align" id="socialHist">
+  <form class="form-container">
+
+    <h1>Social History</h1>
+    <div class="row">
+      <div class="col-12">
+        <label for="msg"><b>Notes</b></label>
+        <textarea placeholder="Type message.." name="msg" style="min-height: 100px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="msg"><b>Comments</b></label>
+        <textarea placeholder="Type message.." name="msg" style="min-height: 100px"></textarea>
+      </div>
+    </div>
+
+
+
+
+    <div class="footer">
+      <button type="submit" class="btn save">Save</button>
+      <button type="button" class="btn cancel" (click)="closeSocialHistory()">Cancel</button>
+    </div>
+
+  </form>
+</div>
